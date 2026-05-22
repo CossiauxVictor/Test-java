@@ -1,0 +1,50 @@
+-------------------------------------------------------------------------------
+Test set: com.example.RechercheVilleTest
+-------------------------------------------------------------------------------
+Tests run: 6, Failures: 2, Errors: 4, Skipped: 0, Time elapsed: 0.124 s <<< FAILURE! -- in com.example.RechercheVilleTest
+com.example.RechercheVilleTest.devraitRetournerBudapestPourLaRechercheApe -- Time elapsed: 0.055 s <<< ERROR!
+com.example.NotImplementedException: Not implemented
+	at com.example.RechercheVille.Rechercher(RechercheVille.java:19)
+	at com.example.RechercheVilleTest.devraitRetournerBudapestPourLaRechercheApe(RechercheVilleTest.java:52)
+
+com.example.RechercheVilleTest.devraitRetournerValenceEtVancouverPourLaRechercheVa -- Time elapsed: 0.002 s <<< ERROR!
+com.example.NotImplementedException: Not implemented
+	at com.example.RechercheVille.Rechercher(RechercheVille.java:19)
+	at com.example.RechercheVilleTest.devraitRetournerValenceEtVancouverPourLaRechercheVa(RechercheVilleTest.java:35)
+
+com.example.RechercheVilleTest.devraitLeverUneNotFoundExceptionQuandLeTexteEstVide -- Time elapsed: 0.017 s <<< FAILURE!
+org.opentest4j.AssertionFailedError: Unexpected exception type thrown, expected: <com.example.NotFoundException> but was: <com.example.NotImplementedException>
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:158)
+	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:68)
+	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:35)
+	at org.junit.jupiter.api.Assertions.assertThrows(Assertions.java:3223)
+	at com.example.RechercheVilleTest.devraitLeverUneNotFoundExceptionQuandLeTexteEstVide(RechercheVilleTest.java:23)
+Caused by: com.example.NotImplementedException: Not implemented
+	at com.example.RechercheVille.Rechercher(RechercheVille.java:19)
+	at com.example.RechercheVilleTest.lambda$devraitLeverUneNotFoundExceptionQuandLeTexteEstVide$0(RechercheVilleTest.java:23)
+	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:54)
+	... 3 more
+
+com.example.RechercheVilleTest.devraitEtreInsensibleALaCasse -- Time elapsed: 0.002 s <<< ERROR!
+com.example.NotImplementedException: Not implemented
+	at com.example.RechercheVille.Rechercher(RechercheVille.java:19)
+	at com.example.RechercheVilleTest.devraitEtreInsensibleALaCasse(RechercheVilleTest.java:44)
+
+com.example.RechercheVilleTest.devraitLeverUneNotFoundExceptionQuandLeTexteContientMoinsDe2Caracteres -- Time elapsed: 0.003 s <<< FAILURE!
+org.opentest4j.AssertionFailedError: Unexpected exception type thrown, expected: <com.example.NotFoundException> but was: <com.example.NotImplementedException>
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:158)
+	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:68)
+	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:35)
+	at org.junit.jupiter.api.Assertions.assertThrows(Assertions.java:3223)
+	at com.example.RechercheVilleTest.devraitLeverUneNotFoundExceptionQuandLeTexteContientMoinsDe2Caracteres(RechercheVilleTest.java:29)
+Caused by: com.example.NotImplementedException: Not implemented
+	at com.example.RechercheVille.Rechercher(RechercheVille.java:19)
+	at com.example.RechercheVilleTest.lambda$devraitLeverUneNotFoundExceptionQuandLeTexteContientMoinsDe2Caracteres$0(RechercheVilleTest.java:29)
+	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:54)
+	... 3 more
+
+com.example.RechercheVilleTest.devraitRetournerToutesLesVillesQuandLeTexteEstUnAsterisque -- Time elapsed: 0.001 s <<< ERROR!
+com.example.NotImplementedException: Not implemented
+	at com.example.RechercheVille.Rechercher(RechercheVille.java:19)
+	at com.example.RechercheVilleTest.devraitRetournerToutesLesVillesQuandLeTexteEstUnAsterisque(RechercheVilleTest.java:60)
+
