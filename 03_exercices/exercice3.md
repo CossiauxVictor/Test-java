@@ -5,7 +5,7 @@
 ```java
 public class Fib
 {
-
+   
     private final int range;
 
     public Fib(int r)
@@ -36,12 +36,12 @@ public class Fib
 }
 ```
 
-- Lors du déclanchement de la fonction GetFibSeries() avec un Range de 1
+- Lors du déclanchement de la fonction GetFibSeries() avec un Range de 1 
   - Le résultat n’est pas vide
   - Le résultat correspond à une liste qui contient {0}
-- Lors du déclanchement de la fonction GetFibSeries() avec un Range de 6
-  - Le résultat contient le chiffre 3
-  - Le résultat contient 6 éléments
-  - Le résultat n’a pas le chiffre 4 en son sein
+- Lors du déclanchement de la fonction GetFibSeries() avec un Range de 6 
+  - Le résultat contient le chiffre 3 
+  - Le résultat contient 6 éléments 
+  - Le résultat n’a pas le chiffre 4 en son sein 
   - Le résultat correspond à une liste qui contient {0, 1, 1, 2, 3, 5}
-  - Le résultat est trié de façon ascendance
+  - Le résultat est trié de façon ascendance 
