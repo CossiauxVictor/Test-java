@@ -2,133 +2,91 @@ package com.example;
 
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertThrows;
 
 public class PriceCalculatorTest {
-
-    // --- calculateTotalPrice ---
-
     @Test
-    void devraitRetournerLePrixTotalQuandLePrixUnitaireEst10EtLaQuantiteEst3() {
-        // Arrange
+    void shouldCalculateTotalPrice() {
         PriceCalculator priceCalculator = new PriceCalculator();
 
-        // Act
         double result = priceCalculator.calculateTotalPrice(10.0, 3);
 
-        // Assert
         assertEquals(30.0, result);
     }
 
     @Test
-    void devraitLeverUneExceptionQuandLePrixUnitaireEstNegatif() {
-        // Arrange
+    void shouldApplyDiscount() {
         PriceCalculator priceCalculator = new PriceCalculator();
 
-        // Act & Assert
+        double result = priceCalculator.applyDiscount(100.0, 0.20);
+
+        assertEquals(80.0, result);
+    }
+
+    @Test
+    void shouldCalculateVat() {
+        PriceCalculator priceCalculator = new PriceCalculator();
+
+        double result = priceCalculator.calculateVat(100.0, 0.20);
+
+        assertEquals(20.0, result);
+    }
+
+    @Test
+    void shouldCalculatePriceWithVat() {
+        PriceCalculator priceCalculator = new PriceCalculator();
+
+        double result = priceCalculator.calculatePriceWithVat(100.0, 0.20);
+
+        assertEquals(120.0, result);
+    }
+
+    @Test
+    void shouldThrowExceptionWhenUnitPriceIsNegative() {
+        PriceCalculator priceCalculator = new PriceCalculator();
+
         IllegalArgumentException exception = assertThrows(
                 IllegalArgumentException.class,
                 () -> priceCalculator.calculateTotalPrice(-10.0, 3)
         );
 
-        assertEquals("Le prix unitaire ne doit pas être négatif", exception.getMessage());
+        assertEquals("Unit price must not be negative", exception.getMessage());
     }
 
     @Test
-    void devraitLeverUneExceptionQuandLaQuantiteEstNegative() {
-        // Arrange
+    void shouldThrowExceptionWhenQuantityIsNegative() {
         PriceCalculator priceCalculator = new PriceCalculator();
 
-        // Act & Assert
         IllegalArgumentException exception = assertThrows(
                 IllegalArgumentException.class,
                 () -> priceCalculator.calculateTotalPrice(10.0, -3)
         );
 
-        assertEquals("La quantité ne doit pas être négative", exception.getMessage());
-    }
-
-    // --- applyDiscount ---
-
-    @Test
-    void devraitRetournerLePrixRemiseQuandLeTauxEst20Pourcent() {
-        // Arrange
-        PriceCalculator priceCalculator = new PriceCalculator();
-
-        // Act
-        double result = priceCalculator.applyDiscount(100.0, 0.20);
-
-        // Assert
-        assertEquals(80.0, result);
+        assertEquals("Quantity must not be negative", exception.getMessage());
     }
 
     @Test
-    void devraitLeverUneExceptionQuandLeTauxDeRemiseEstNegatif() {
-        // Arrange
+    void shouldThrowExceptionWhenDiscountRateIsNegative() {
         PriceCalculator priceCalculator = new PriceCalculator();
 
-        // Act & Assert
         IllegalArgumentException exception = assertThrows(
                 IllegalArgumentException.class,
                 () -> priceCalculator.applyDiscount(100.0, -0.20)
         );
 
-        assertEquals("Le taux de remise ne doit pas être négatif", exception.getMessage());
-    }
-
-    // --- calculateVat ---
-
-    @Test
-    void devraitRetournerLeMontantTVAQuandLeTauxEst20Pourcent() {
-        // Arrange
-        PriceCalculator priceCalculator = new PriceCalculator();
-
-        // Act
-        double result = priceCalculator.calculateVat(100.0, 0.20);
-
-        // Assert
-        assertEquals(20.0, result);
+        assertEquals("Discount rate must not be negative", exception.getMessage());
     }
 
     @Test
-    void devraitLeverUneExceptionQuandLeTauxDeTVAEstNegatifDansCalculerTVA() {
-        // Arrange
+    void shouldThrowExceptionWhenVatRateIsNegative() {
         PriceCalculator priceCalculator = new PriceCalculator();
 
-        // Act & Assert
         IllegalArgumentException exception = assertThrows(
                 IllegalArgumentException.class,
                 () -> priceCalculator.calculateVat(100.0, -0.20)
         );
 
-        assertEquals("Le taux de TVA ne doit pas être négatif", exception.getMessage());
-    }
-
-    // --- calculatePriceWithVat ---
-
-    @Test
-    void devraitRetournerLePrixAvecTVAQuandLeTauxEst20Pourcent() {
-        // Arrange
-        PriceCalculator priceCalculator = new PriceCalculator();
-
-        // Act
-        double result = priceCalculator.calculatePriceWithVat(100.0, 0.20);
-
-        // Assert
-        assertEquals(120.0, result);
-    }
-
-    @Test
-    void devraitLeverUneExceptionQuandLeTauxDeTVAEstNegatifDansCalculerPrixAvecTVA() {
-        // Arrange
-        PriceCalculator priceCalculator = new PriceCalculator();
-
-        // Act & Assert
-        IllegalArgumentException exception = assertThrows(
-                IllegalArgumentException.class,
-                () -> priceCalculator.calculatePriceWithVat(100.0, -0.20)
-        );
-
-        assertEquals("Le taux de TVA ne doit pas être négatif", exception.getMessage());
+        assertEquals("VAT rate must not be negative", exception.getMessage());
     }
 }
