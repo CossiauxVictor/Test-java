@@ -1,0 +1,8 @@
+com\example\Reservation.class
+com\example\Room.class
+com\example\ReservationService.class
+com\example\NotificationService.class
+com\example\ReservationReceipt.class
+com\example\ReservationRepository.class
+com\example\RoomRepository.class
+com\example\ReservationException.class
