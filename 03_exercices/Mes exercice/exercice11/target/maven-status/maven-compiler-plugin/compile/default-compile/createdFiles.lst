@@ -1,0 +1,15 @@
+com\example\ticketapi\dto\CreateTicketRequest.class
+com\example\ticketapi\exception\TicketNotFoundException.class
+com\example\ticketapi\model\Ticket.class
+com\example\ticketapi\dto\ApiError.class
+com\example\ticketapi\dto\UpdateStatusRequest.class
+com\example\ticketapi\dto\TicketResponse.class
+com\example\ticketapi\exception\InvalidStatusTransitionException.class
+com\example\ticketapi\repository\InMemoryTicketRepository.class
+com\example\ticketapi\controller\TicketExceptionHandler.class
+com\example\ticketapi\TicketApiApplication.class
+com\example\ticketapi\model\Status.class
+com\example\ticketapi\model\Priority.class
+com\example\ticketapi\controller\TicketController.class
+com\example\ticketapi\repository\TicketRepository.class
+com\example\ticketapi\service\TicketService.class
