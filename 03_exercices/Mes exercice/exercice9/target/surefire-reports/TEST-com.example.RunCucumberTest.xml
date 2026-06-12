@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" version="3.0.2" name="com.example.FrameTest" time="0.104" tests="12" errors="0" skipped="0" failures="0" flakes="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" version="3.0.2" name="com.example.RunCucumberTest" time="2.292" tests="12" errors="0" skipped="0" failures="0" flakes="0">
   <properties>
     <property name="java.specification.version" value="25"/>
     <property name="sun.cpu.isalist" value="amd64"/>
@@ -59,22 +59,107 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="69.0"/>
   </properties>
-  <testcase name="shouldAcceptThirdRollWhenLastFrameStartsWithStrike" classname="com.example.FrameTest" time="0.054">
-    <system-err><![CDATA[juin 12, 2026 11:57:06 AM org.junit.platform.launcher.core.DiscoveryIssueNotifier logIssues
+  <testcase name="Premier lancer augmente le score d&apos;une série standard" classname="RunCucumberTest" time="1.283">
+    <system-out><![CDATA[
+&amp#27;[1mScenario:&amp#27;[22m Premier lancer augmente le score d'une série standard &amp#27;[90m# classpath:features/frame.feature:3&amp#27;[39m
+  &amp#27;[32m✔&amp#27;[39m &amp#27;[32m&amp#27;[1mGiven &amp#27;[22mune série standard est en cours&amp#27;[39m                       &amp#27;[90m# com.example.FrameSteps.uneSerieStandardEstEnCours()&amp#27;[39m
+  &amp#27;[32m✔&amp#27;[39m &amp#27;[32m&amp#27;[1mWhen &amp#27;[22mle joueur effectue un lancer de &amp#27;[1m5&amp#27;[22m quilles&amp#27;[39m              &amp#27;[90m# com.example.FrameSteps.leJoueurEffectueUnLancerDe(int)&amp#27;[39m
+  &amp#27;[32m✔&amp#27;[39m &amp#27;[32m&amp#27;[1mThen &amp#27;[22mle score de la série est &amp#27;[1m5&amp#27;[22m&amp#27;[39m                             &amp#27;[90m# com.example.FrameSteps.leScoreDeLaSerieEst(int)&amp#27;[39m
+]]></system-out>
+    <system-err><![CDATA[juin 12, 2026 11:57:03 AM org.junit.platform.launcher.core.DiscoveryIssueNotifier logIssues
 WARNING: TestEngine with ID 'junit-platform-suite' encountered a non-critical issue during test discovery:
 
 (1) [WARNING] [cucumber] The classpath resource selector 'features' should not be used to select features in a package. Use the package selector with 'features' instead (via @Suite com.example.RunCucumberTest).
+Mockito is currently self-attaching to enable the inline-mock-maker. This will no longer work in future releases of the JDK. Please add Mockito as an agent to your build as described in Mockito's documentation: https://javadoc.io/doc/org.mockito/mockito-core/latest/org.mockito/org/mockito/Mockito.html#0.3
+WARNING: A Java agent has been loaded dynamically (C:\Users\allan\.m2\repository\net\bytebuddy\byte-buddy-agent\1.17.7\byte-buddy-agent-1.17.7.jar)
+WARNING: If a serviceability tool is in use, please run with -XX:+EnableDynamicAgentLoading to hide this warning
+WARNING: If a serviceability tool is not in use, please run with -Djdk.instrument.traceUsage for more information
+WARNING: Dynamic loading of agents will be disallowed by default in a future release
 ]]></system-err>
   </testcase>
-  <testcase name="shouldIncreaseScoreWhenFirstRollIsMadeInStandardFrame" classname="com.example.FrameTest" time="0.003"/>
-  <testcase name="shouldIncreaseScoreWhenSecondRollIsMadeInStandardFrame" classname="com.example.FrameTest" time="0.002"/>
-  <testcase name="shouldIncreaseScoreWhenSecondRollIsMadeAfterStrikeInLastFrame" classname="com.example.FrameTest" time="0.001"/>
-  <testcase name="shouldRejectSecondRollWhenStandardFrameStartsWithStrike" classname="com.example.FrameTest" time="0.003"/>
-  <testcase name="shouldRejectThirdRollWhenStandardFrameAlreadyHasTwoRolls" classname="com.example.FrameTest" time="0.002"/>
-  <testcase name="shouldIncreaseScoreWhenThirdRollIsMadeAfterSpareInLastFrame" classname="com.example.FrameTest" time="0.002"/>
-  <testcase name="shouldIncreaseScoreWhenThirdRollIsMadeAfterStrikeInLastFrame" classname="com.example.FrameTest" time="0.002"/>
-  <testcase name="shouldRejectFourthRollInLastFrame" classname="com.example.FrameTest" time="0.002"/>
-  <testcase name="shouldAcceptSecondRollWhenLastFrameStartsWithStrike" classname="com.example.FrameTest" time="0.002"/>
-  <testcase name="shouldRejectThirdRollWhenLastFrameHasNoStrikeOrSpare" classname="com.example.FrameTest" time="0.002"/>
-  <testcase name="shouldAcceptThirdRollWhenLastFrameStartsWithSpare" classname="com.example.FrameTest" time="0.002"/>
+  <testcase name="Second lancer augmente le score d&apos;une série standard" classname="RunCucumberTest" time="0.008">
+    <system-out><![CDATA[
+&amp#27;[1mScenario:&amp#27;[22m Second lancer augmente le score d'une série standard &amp#27;[90m# classpath:features/frame.feature:8&amp#27;[39m
+  &amp#27;[32m✔&amp#27;[39m &amp#27;[32m&amp#27;[1mGiven &amp#27;[22mune série standard est en cours&amp#27;[39m                      &amp#27;[90m# com.example.FrameSteps.uneSerieStandardEstEnCours()&amp#27;[39m
+  &amp#27;[32m✔&amp#27;[39m &amp#27;[32m&amp#27;[1mWhen &amp#27;[22mle joueur effectue un lancer de &amp#27;[1m3&amp#27;[22m quilles&amp#27;[39m             &amp#27;[90m# com.example.FrameSteps.leJoueurEffectueUnLancerDe(int)&amp#27;[39m
+  &amp#27;[32m✔&amp#27;[39m &amp#27;[32m&amp#27;[1mAnd &amp#27;[22mle joueur effectue un lancer de &amp#27;[1m4&amp#27;[22m quilles&amp#27;[39m              &amp#27;[90m# com.example.FrameSteps.leJoueurEffectueUnLancerDe(int)&amp#27;[39m
+  &amp#27;[32m✔&amp#27;[39m &amp#27;[32m&amp#27;[1mThen &amp#27;[22mle score de la série est &amp#27;[1m7&amp#27;[22m&amp#27;[39m                            &amp#27;[90m# com.example.FrameSteps.leScoreDeLaSerieEst(int)&amp#27;[39m
+]]></system-out>
+  </testcase>
+  <testcase name="Un strike empêche un second lancer dans une série standard" classname="RunCucumberTest" time="0.01">
+    <system-out><![CDATA[
+&amp#27;[1mScenario:&amp#27;[22m Un strike empêche un second lancer dans une série standard &amp#27;[90m# classpath:features/frame.feature:14&amp#27;[39m
+  &amp#27;[32m✔&amp#27;[39m &amp#27;[32m&amp#27;[1mGiven &amp#27;[22mune série standard est en cours&amp#27;[39m                            &amp#27;[90m# com.example.FrameSteps.uneSerieStandardEstEnCours()&amp#27;[39m
+  &amp#27;[32m✔&amp#27;[39m &amp#27;[32m&amp#27;[1mWhen &amp#27;[22mle joueur fait un strike&amp#27;[39m                                    &amp#27;[90m# com.example.FrameSteps.leJoueurFaitUnStrike()&amp#27;[39m
+  &amp#27;[32m✔&amp#27;[39m &amp#27;[32m&amp#27;[1mThen &amp#27;[22mle joueur ne peut pas lancer à nouveau dans cette série&amp#27;[39m     &amp#27;[90m# com.example.FrameSteps.leJoueurNePeutPasLancerANouveau()&amp#27;[39m
+]]></system-out>
+  </testcase>
+  <testcase name="Deux lancers empêchent un troisième lancer dans une série standard" classname="RunCucumberTest" time="0.007">
+    <system-out><![CDATA[
+&amp#27;[1mScenario:&amp#27;[22m Deux lancers empêchent un troisième lancer dans une série standard &amp#27;[90m# classpath:features/frame.feature:19&amp#27;[39m
+  &amp#27;[32m✔&amp#27;[39m &amp#27;[32m&amp#27;[1mGiven &amp#27;[22mune série standard est en cours avec 2 lancers normaux&amp#27;[39m             &amp#27;[90m# com.example.FrameSteps.uneSerieStandardAvec2LancersNormaux()&amp#27;[39m
+  &amp#27;[32m✔&amp#27;[39m &amp#27;[32m&amp#27;[1mThen &amp#27;[22mle joueur ne peut pas lancer à nouveau dans cette série&amp#27;[39m             &amp#27;[90m# com.example.FrameSteps.leJoueurNePeutPasLancerANouveau()&amp#27;[39m
+]]></system-out>
+  </testcase>
+  <testcase name="Strike dans le dernier round - le second lancer est accepté" classname="RunCucumberTest" time="0.007">
+    <system-out><![CDATA[
+&amp#27;[1mScenario:&amp#27;[22m Strike dans le dernier round - le second lancer est accepté &amp#27;[90m# classpath:features/frame.feature:23&amp#27;[39m
+  &amp#27;[32m✔&amp#27;[39m &amp#27;[32m&amp#27;[1mGiven &amp#27;[22mune dernière série est en cours&amp#27;[39m                             &amp#27;[90m# com.example.FrameSteps.uneDerniereSerieEstEnCours()&amp#27;[39m
+  &amp#27;[32m✔&amp#27;[39m &amp#27;[32m&amp#27;[1mWhen &amp#27;[22mle joueur fait un strike&amp#27;[39m                                     &amp#27;[90m# com.example.FrameSteps.leJoueurFaitUnStrike()&amp#27;[39m
+  &amp#27;[32m✔&amp#27;[39m &amp#27;[32m&amp#27;[1mThen &amp#27;[22mle joueur peut lancer à nouveau dans cette série&amp#27;[39m             &amp#27;[90m# com.example.FrameSteps.leJoueurPeutLancerANouveau()&amp#27;[39m
+]]></system-out>
+  </testcase>
+  <testcase name="Strike dans le dernier round - le score augmente après un second lancer" classname="RunCucumberTest" time="0.009">
+    <system-out><![CDATA[
+&amp#27;[1mScenario:&amp#27;[22m Strike dans le dernier round - le score augmente après un second lancer &amp#27;[90m# classpath:features/frame.feature:28&amp#27;[39m
+  &amp#27;[32m✔&amp#27;[39m &amp#27;[32m&amp#27;[1mGiven &amp#27;[22mune dernière série est en cours&amp#27;[39m                                         &amp#27;[90m# com.example.FrameSteps.uneDerniereSerieEstEnCours()&amp#27;[39m
+  &amp#27;[32m✔&amp#27;[39m &amp#27;[32m&amp#27;[1mWhen &amp#27;[22mle joueur fait un strike&amp#27;[39m                                                 &amp#27;[90m# com.example.FrameSteps.leJoueurFaitUnStrike()&amp#27;[39m
+  &amp#27;[32m✔&amp#27;[39m &amp#27;[32m&amp#27;[1mAnd &amp#27;[22mle joueur effectue un lancer de &amp#27;[1m5&amp#27;[22m quilles&amp#27;[39m                                 &amp#27;[90m# com.example.FrameSteps.leJoueurEffectueUnLancerDe(int)&amp#27;[39m
+  &amp#27;[32m✔&amp#27;[39m &amp#27;[32m&amp#27;[1mThen &amp#27;[22mle score de la série est &amp#27;[1m15&amp#27;[22m&amp#27;[39m                                              &amp#27;[90m# com.example.FrameSteps.leScoreDeLaSerieEst(int)&amp#27;[39m
+]]></system-out>
+  </testcase>
+  <testcase name="Strike dans le dernier round - le troisième lancer est accepté" classname="RunCucumberTest" time="0.007">
+    <system-out><![CDATA[
+&amp#27;[1mScenario:&amp#27;[22m Strike dans le dernier round - le troisième lancer est accepté   &amp#27;[90m# classpath:features/frame.feature:34&amp#27;[39m
+  &amp#27;[32m✔&amp#27;[39m &amp#27;[32m&amp#27;[1mGiven &amp#27;[22mune dernière série est en cours avec un strike et un lancer de 5&amp#27;[39m &amp#27;[90m# com.example.FrameSteps.uneDerniereSerieAvecUnStrikeEtUnLancerDe5()&amp#27;[39m
+  &amp#27;[32m✔&amp#27;[39m &amp#27;[32m&amp#27;[1mThen &amp#27;[22mle joueur peut lancer à nouveau dans cette série&amp#27;[39m                  &amp#27;[90m# com.example.FrameSteps.leJoueurPeutLancerANouveau()&amp#27;[39m
+]]></system-out>
+  </testcase>
+  <testcase name="Strike dans le dernier round - le score augmente au troisième lancer" classname="RunCucumberTest" time="0.007">
+    <system-out><![CDATA[
+&amp#27;[1mScenario:&amp#27;[22m Strike dans le dernier round - le score augmente au troisième lancer &amp#27;[90m# classpath:features/frame.feature:38&amp#27;[39m
+  &amp#27;[32m✔&amp#27;[39m &amp#27;[32m&amp#27;[1mGiven &amp#27;[22mune dernière série est en cours avec un strike et un lancer de 5&amp#27;[39m     &amp#27;[90m# com.example.FrameSteps.uneDerniereSerieAvecUnStrikeEtUnLancerDe5()&amp#27;[39m
+  &amp#27;[32m✔&amp#27;[39m &amp#27;[32m&amp#27;[1mWhen &amp#27;[22mle joueur effectue un lancer de &amp#27;[1m3&amp#27;[22m quilles&amp#27;[39m                             &amp#27;[90m# com.example.FrameSteps.leJoueurEffectueUnLancerDe(int)&amp#27;[39m
+  &amp#27;[32m✔&amp#27;[39m &amp#27;[32m&amp#27;[1mThen &amp#27;[22mle score de la série est &amp#27;[1m18&amp#27;[22m&amp#27;[39m                                           &amp#27;[90m# com.example.FrameSteps.leScoreDeLaSerieEst(int)&amp#27;[39m
+]]></system-out>
+  </testcase>
+  <testcase name="Spare dans le dernier round - le troisième lancer est accepté" classname="RunCucumberTest" time="0.005">
+    <system-out><![CDATA[
+&amp#27;[1mScenario:&amp#27;[22m Spare dans le dernier round - le troisième lancer est accepté &amp#27;[90m# classpath:features/frame.feature:43&amp#27;[39m
+  &amp#27;[32m✔&amp#27;[39m &amp#27;[32m&amp#27;[1mGiven &amp#27;[22mune dernière série est en cours avec un spare&amp#27;[39m                 &amp#27;[90m# com.example.FrameSteps.uneDerniereSerieAvecUnSpare()&amp#27;[39m
+  &amp#27;[32m✔&amp#27;[39m &amp#27;[32m&amp#27;[1mThen &amp#27;[22mle joueur peut lancer à nouveau dans cette série&amp#27;[39m               &amp#27;[90m# com.example.FrameSteps.leJoueurPeutLancerANouveau()&amp#27;[39m
+]]></system-out>
+  </testcase>
+  <testcase name="Spare dans le dernier round - le score augmente au troisième lancer" classname="RunCucumberTest" time="0.011">
+    <system-out><![CDATA[
+&amp#27;[1mScenario:&amp#27;[22m Spare dans le dernier round - le score augmente au troisième lancer &amp#27;[90m# classpath:features/frame.feature:47&amp#27;[39m
+  &amp#27;[32m✔&amp#27;[39m &amp#27;[32m&amp#27;[1mGiven &amp#27;[22mune dernière série est en cours avec un spare&amp#27;[39m                       &amp#27;[90m# com.example.FrameSteps.uneDerniereSerieAvecUnSpare()&amp#27;[39m
+  &amp#27;[32m✔&amp#27;[39m &amp#27;[32m&amp#27;[1mWhen &amp#27;[22mle joueur effectue un lancer de &amp#27;[1m6&amp#27;[22m quilles&amp#27;[39m                            &amp#27;[90m# com.example.FrameSteps.leJoueurEffectueUnLancerDe(int)&amp#27;[39m
+  &amp#27;[32m✔&amp#27;[39m &amp#27;[32m&amp#27;[1mThen &amp#27;[22mle score de la série est &amp#27;[1m16&amp#27;[22m&amp#27;[39m                                          &amp#27;[90m# com.example.FrameSteps.leScoreDeLaSerieEst(int)&amp#27;[39m
+]]></system-out>
+  </testcase>
+  <testcase name="Pas de troisième lancer dans le dernier round sans strike ni spare" classname="RunCucumberTest" time="0.004">
+    <system-out><![CDATA[
+&amp#27;[1mScenario:&amp#27;[22m Pas de troisième lancer dans le dernier round sans strike ni spare &amp#27;[90m# classpath:features/frame.feature:52&amp#27;[39m
+  &amp#27;[32m✔&amp#27;[39m &amp#27;[32m&amp#27;[1mGiven &amp#27;[22mune dernière série est en cours avec 2 lancers normaux&amp#27;[39m             &amp#27;[90m# com.example.FrameSteps.uneDerniereSerieAvec2LancersNormaux()&amp#27;[39m
+  &amp#27;[32m✔&amp#27;[39m &amp#27;[32m&amp#27;[1mThen &amp#27;[22mle joueur ne peut pas lancer à nouveau dans cette série&amp#27;[39m             &amp#27;[90m# com.example.FrameSteps.leJoueurNePeutPasLancerANouveau()&amp#27;[39m
+]]></system-out>
+  </testcase>
+  <testcase name="Pas de quatrième lancer dans le dernier round" classname="RunCucumberTest" time="0.003">
+    <system-out><![CDATA[
+&amp#27;[1mScenario:&amp#27;[22m Pas de quatrième lancer dans le dernier round                  &amp#27;[90m# classpath:features/frame.feature:56&amp#27;[39m
+  &amp#27;[32m✔&amp#27;[39m &amp#27;[32m&amp#27;[1mGiven &amp#27;[22mune dernière série est en cours avec un strike et deux lancers&amp#27;[39m &amp#27;[90m# com.example.FrameSteps.uneDerniereSerieAvecUnStrikeEtDeuxLancers()&amp#27;[39m
+  &amp#27;[32m✔&amp#27;[39m &amp#27;[32m&amp#27;[1mThen &amp#27;[22mle joueur ne peut pas lancer à nouveau dans cette série&amp#27;[39m         &amp#27;[90m# com.example.FrameSteps.leJoueurNePeutPasLancerANouveau()&amp#27;[39m
+]]></system-out>
+  </testcase>
 </testsuite>
