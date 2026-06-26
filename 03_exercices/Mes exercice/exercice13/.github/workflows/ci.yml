@@ -1,0 +1,52 @@
+name: CI - Bank API
+
+on:
+  push:
+    branches: [ main, master ]
+  pull_request:
+    branches: [ main, master ]
+
+jobs:
+  build-and-test:
+    runs-on: ubuntu-latest
+
+    steps:
+      # 1 - recuperer le code
+      - name: Checkout du code
+        uses: actions/checkout@v4
+
+      # 2 - installer Java 21
+      - name: Installation de Java 21
+        uses: actions/setup-java@v4
+        with:
+          java-version: '21'
+          distribution: 'temurin'
+          cache: maven
+
+      # 3 - lancer les tests et generer les rapports
+      - name: Execution des tests
+        run: mvn clean verify
+
+      # 4 - archiver les rapports de tests
+      - name: Archivage des rapports surefire
+        uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: surefire-reports
+          path: target/surefire-reports
+
+      # 5 - archiver le rapport JaCoCo
+      - name: Archivage du rapport JaCoCo
+        uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: jacoco-report
+          path: target/site/jacoco
+
+      # 6 - archiver les rapports Cucumber
+      - name: Archivage des rapports Cucumber
+        uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: cucumber-reports
+          path: target/cucumber-report.*

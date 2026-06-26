@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="fr"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>PretService.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">exercice14</a> &gt; <a href="index.source.html" class="el_package">com.example</a> &gt; <span class="el_source">PretService.java</span></div><h1>PretService.java</h1><pre class="source lang-java linenums">package com.example;
+
+import java.time.LocalDate;
+
+public class PretService {
+    private final OuvrageRepository ouvrageRepository;
+    private final PretRepository pretRepository;
+
+<span class="fc" id="L9">    public PretService(OuvrageRepository ouvrageRepository, PretRepository pretRepository) {</span>
+<span class="fc" id="L10">        this.ouvrageRepository = ouvrageRepository;</span>
+<span class="fc" id="L11">        this.pretRepository = pretRepository;</span>
+<span class="fc" id="L12">    }</span>
+
+    public Pret creer(Adherent adherent, Ouvrage ouvrage, LocalDate dateDebut) {
+<span class="fc bfc" id="L15" title="All 2 branches covered.">        if (adherent.isSuspendu()) {</span>
+<span class="fc" id="L16">            throw new AdherentSuspenduException(&quot;L'adhérent est suspendu&quot;);</span>
+        }
+<span class="fc bfc" id="L18" title="All 2 branches covered.">        if (!ouvrage.isDisponible()) {</span>
+<span class="fc" id="L19">            throw new OuvrageIndisponibleException(&quot;L'ouvrage est indisponible&quot;);</span>
+        }
+
+<span class="fc" id="L22">        ouvrage.setDisponible(false);</span>
+<span class="fc" id="L23">        ouvrageRepository.save(ouvrage);</span>
+
+<span class="fc" id="L25">        Pret pret = new Pret(adherent, ouvrage, dateDebut);</span>
+<span class="fc" id="L26">        pretRepository.save(pret);</span>
+<span class="fc" id="L27">        return pret;</span>
+    }
+
+    public double calculerPenalite(Pret pret, LocalDate dateRetour) {
+<span class="fc bfc" id="L31" title="All 2 branches covered.">        if (dateRetour.isAfter(pret.getDateRetourPrevue())) {</span>
+<span class="fc" id="L32">            long joursRetard = dateRetour.toEpochDay() - pret.getDateRetourPrevue().toEpochDay();</span>
+<span class="fc" id="L33">            return joursRetard * 0.15;</span>
+        }
+<span class="fc" id="L35">        return 0;</span>
+    }
+
+    public void retournerOuvrage(Pret pret, LocalDate dateRetour) {
+<span class="fc" id="L39">        Ouvrage ouvrage = pret.getOuvrage();</span>
+<span class="fc" id="L40">        ouvrage.setDisponible(true);</span>
+<span class="fc" id="L41">        ouvrageRepository.save(ouvrage);</span>
+
+<span class="fc bfc" id="L43" title="All 2 branches covered.">        if (dateRetour.isAfter(pret.getDateRetourPrevue())) {</span>
+<span class="fc" id="L44">            long joursRetard = dateRetour.toEpochDay() - pret.getDateRetourPrevue().toEpochDay();</span>
+<span class="fc bfc" id="L45" title="All 2 branches covered.">            if (joursRetard &gt; 7) {</span>
+<span class="fc" id="L46">                Adherent adherent = pret.getAdherent();</span>
+<span class="fc" id="L47">                adherent.incrementerRetardImportant();</span>
+<span class="fc bfc" id="L48" title="All 2 branches covered.">                if (adherent.getCompteurRetardImportantAnnee() &gt;= 3) {</span>
+<span class="fc" id="L49">                    adherent.setSuspendu(true);</span>
+                }
+            }
+        }
+<span class="fc" id="L53">    }</span>
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.15.202606040825</span></div></body></html>

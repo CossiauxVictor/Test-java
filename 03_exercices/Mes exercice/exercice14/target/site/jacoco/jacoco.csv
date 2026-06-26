@@ -1,0 +1,9 @@
+GROUP,PACKAGE,CLASS,INSTRUCTION_MISSED,INSTRUCTION_COVERED,BRANCH_MISSED,BRANCH_COVERED,LINE_MISSED,LINE_COVERED,COMPLEXITY_MISSED,COMPLEXITY_COVERED,METHOD_MISSED,METHOD_COVERED
+exercice14,com.example,Pret,3,26,0,0,1,9,1,4,1,4
+exercice14,com.example,Ouvrage,3,22,0,0,1,9,1,4,1,4
+exercice14,com.example,PretService,0,103,0,12,0,28,0,10,0,4
+exercice14,com.example,AdherentSuspenduException,0,4,0,0,0,2,0,1,0,1
+exercice14,com.example,Reservation,0,15,0,0,0,6,0,3,0,3
+exercice14,com.example,ReservationService,9,51,1,5,3,14,1,5,0,3
+exercice14,com.example,Adherent,3,39,0,0,1,15,1,7,1,7
+exercice14,com.example,OuvrageIndisponibleException,0,4,0,0,0,2,0,1,0,1

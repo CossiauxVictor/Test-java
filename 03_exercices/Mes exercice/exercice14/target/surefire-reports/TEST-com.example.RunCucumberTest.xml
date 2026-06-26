@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" version="3.0.2" name="com.example.RunCucumberTest" time="1.667" tests="5" errors="0" skipped="0" failures="0" flakes="0">
+  <properties>
+    <property name="java.specification.version" value="25"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.class.path" value="C:\Users\allan\Documents\Ynov\Test\Test-java\03_exercices\Mes exercice\exercice14\target\test-classes;C:\Users\allan\Documents\Ynov\Test\Test-java\03_exercices\Mes exercice\exercice14\target\classes;C:\Users\allan\.m2\repository\io\cucumber\cucumber-java\7.34.3\cucumber-java-7.34.3.jar;C:\Users\allan\.m2\repository\io\cucumber\cucumber-core\7.34.3\cucumber-core-7.34.3.jar;C:\Users\allan\.m2\repository\io\cucumber\cucumber-gherkin\7.34.3\cucumber-gherkin-7.34.3.jar;C:\Users\allan\.m2\repository\io\cucumber\cucumber-gherkin-messages\7.34.3\cucumber-gherkin-messages-7.34.3.jar;C:\Users\allan\.m2\repository\io\cucumber\gherkin\36.1.0\gherkin-36.1.0.jar;C:\Users\allan\.m2\repository\io\cucumber\messages\30.1.0\messages-30.1.0.jar;C:\Users\allan\.m2\repository\io\cucumber\messages-ndjson\0.3.2\messages-ndjson-0.3.2.jar;C:\Users\allan\.m2\repository\io\cucumber\pretty-formatter\2.4.1\pretty-formatter-2.4.1.jar;C:\Users\allan\.m2\repository\io\cucumber\query\14.7.0\query-14.7.0.jar;C:\Users\allan\.m2\repository\io\cucumber\teamcity-formatter\0.2.0\teamcity-formatter-0.2.0.jar;C:\Users\allan\.m2\repository\io\cucumber\testng-xml-formatter\0.7.0\testng-xml-formatter-0.7.0.jar;C:\Users\allan\.m2\repository\io\cucumber\usage-formatter\0.1.0\usage-formatter-0.1.0.jar;C:\Users\allan\.m2\repository\io\cucumber\tag-expressions\8.1.0\tag-expressions-8.1.0.jar;C:\Users\allan\.m2\repository\io\cucumber\cucumber-expressions\18.1.0\cucumber-expressions-18.1.0.jar;C:\Users\allan\.m2\repository\io\cucumber\cucumber-json-formatter\0.3.2\cucumber-json-formatter-0.3.2.jar;C:\Users\allan\.m2\repository\io\cucumber\datatable\7.34.3\datatable-7.34.3.jar;C:\Users\allan\.m2\repository\io\cucumber\cucumber-plugin\7.34.3\cucumber-plugin-7.34.3.jar;C:\Users\allan\.m2\repository\io\cucumber\docstring\7.34.3\docstring-7.34.3.jar;C:\Users\allan\.m2\repository\io\cucumber\html-formatter\22.3.0\html-formatter-22.3.0.jar;C:\Users\allan\.m2\repository\io\cucumber\junit-xml-formatter\0.11.0\junit-xml-formatter-0.11.0.jar;C:\Users\allan\.m2\repository\io\cucumber\ci-environment\12.0.0\ci-environment-12.0.0.jar;C:\Users\allan\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\allan\.m2\repository\io\cucumber\cucumber-junit-platform-engine\7.34.3\cucumber-junit-platform-engine-7.34.3.jar;C:\Users\allan\.m2\repository\org\junit\platform\junit-platform-engine\1.14.2\junit-platform-engine-1.14.2.jar;C:\Users\allan\.m2\repository\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar;C:\Users\allan\.m2\repository\org\junit\platform\junit-platform-commons\1.14.2\junit-platform-commons-1.14.2.jar;C:\Users\allan\.m2\repository\org\junit\platform\junit-platform-suite\1.14.2\junit-platform-suite-1.14.2.jar;C:\Users\allan\.m2\repository\org\junit\platform\junit-platform-suite-api\1.14.2\junit-platform-suite-api-1.14.2.jar;C:\Users\allan\.m2\repository\org\junit\platform\junit-platform-suite-engine\1.14.2\junit-platform-suite-engine-1.14.2.jar;C:\Users\allan\.m2\repository\org\junit\platform\junit-platform-suite-commons\1.14.2\junit-platform-suite-commons-1.14.2.jar;C:\Users\allan\.m2\repository\org\junit\platform\junit-platform-launcher\1.14.2\junit-platform-launcher-1.14.2.jar;C:\Users\allan\.m2\repository\org\junit\jupiter\junit-jupiter\5.14.2\junit-jupiter-5.14.2.jar;C:\Users\allan\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.14.2\junit-jupiter-api-5.14.2.jar;C:\Users\allan\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.14.2\junit-jupiter-params-5.14.2.jar;C:\Users\allan\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.14.2\junit-jupiter-engine-5.14.2.jar;C:\Users\allan\.m2\repository\org\mockito\mockito-core\5.23.0\mockito-core-5.23.0.jar;C:\Users\allan\.m2\repository\net\bytebuddy\byte-buddy-agent\1.17.5\byte-buddy-agent-1.17.5.jar;C:\Users\allan\.m2\repository\org\objenesis\objenesis\3.3\objenesis-3.3.jar;C:\Users\allan\.m2\repository\net\bytebuddy\byte-buddy\1.17.5\byte-buddy-1.17.5.jar;C:\Users\allan\.m2\repository\org\assertj\assertj-core\3.26.0\assertj-core-3.26.0.jar;"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="https://java.oracle.com/"/>
+    <property name="user.timezone" value="Europe/Paris"/>
+    <property name="os.name" value="Windows 11"/>
+    <property name="java.vm.specification.version" value="25"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="FR"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-25\bin"/>
+    <property name="sun.java.command" value="C:\Users\allan\AppData\Local\Temp\surefire9654156744504198973\surefirebooter-20260626161050241_3.jar C:\Users\allan\AppData\Local\Temp\surefire9654156744504198973 2026-06-26T16-10-50_162-jvmRun1 surefire-20260626161050241_1tmp surefire_0-20260626161050241_2tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="C:\Users\allan\Documents\Ynov\Test\Test-java\03_exercices\Mes exercice\exercice14\target\test-classes;C:\Users\allan\Documents\Ynov\Test\Test-java\03_exercices\Mes exercice\exercice14\target\classes;C:\Users\allan\.m2\repository\io\cucumber\cucumber-java\7.34.3\cucumber-java-7.34.3.jar;C:\Users\allan\.m2\repository\io\cucumber\cucumber-core\7.34.3\cucumber-core-7.34.3.jar;C:\Users\allan\.m2\repository\io\cucumber\cucumber-gherkin\7.34.3\cucumber-gherkin-7.34.3.jar;C:\Users\allan\.m2\repository\io\cucumber\cucumber-gherkin-messages\7.34.3\cucumber-gherkin-messages-7.34.3.jar;C:\Users\allan\.m2\repository\io\cucumber\gherkin\36.1.0\gherkin-36.1.0.jar;C:\Users\allan\.m2\repository\io\cucumber\messages\30.1.0\messages-30.1.0.jar;C:\Users\allan\.m2\repository\io\cucumber\messages-ndjson\0.3.2\messages-ndjson-0.3.2.jar;C:\Users\allan\.m2\repository\io\cucumber\pretty-formatter\2.4.1\pretty-formatter-2.4.1.jar;C:\Users\allan\.m2\repository\io\cucumber\query\14.7.0\query-14.7.0.jar;C:\Users\allan\.m2\repository\io\cucumber\teamcity-formatter\0.2.0\teamcity-formatter-0.2.0.jar;C:\Users\allan\.m2\repository\io\cucumber\testng-xml-formatter\0.7.0\testng-xml-formatter-0.7.0.jar;C:\Users\allan\.m2\repository\io\cucumber\usage-formatter\0.1.0\usage-formatter-0.1.0.jar;C:\Users\allan\.m2\repository\io\cucumber\tag-expressions\8.1.0\tag-expressions-8.1.0.jar;C:\Users\allan\.m2\repository\io\cucumber\cucumber-expressions\18.1.0\cucumber-expressions-18.1.0.jar;C:\Users\allan\.m2\repository\io\cucumber\cucumber-json-formatter\0.3.2\cucumber-json-formatter-0.3.2.jar;C:\Users\allan\.m2\repository\io\cucumber\datatable\7.34.3\datatable-7.34.3.jar;C:\Users\allan\.m2\repository\io\cucumber\cucumber-plugin\7.34.3\cucumber-plugin-7.34.3.jar;C:\Users\allan\.m2\repository\io\cucumber\docstring\7.34.3\docstring-7.34.3.jar;C:\Users\allan\.m2\repository\io\cucumber\html-formatter\22.3.0\html-formatter-22.3.0.jar;C:\Users\allan\.m2\repository\io\cucumber\junit-xml-formatter\0.11.0\junit-xml-formatter-0.11.0.jar;C:\Users\allan\.m2\repository\io\cucumber\ci-environment\12.0.0\ci-environment-12.0.0.jar;C:\Users\allan\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\allan\.m2\repository\io\cucumber\cucumber-junit-platform-engine\7.34.3\cucumber-junit-platform-engine-7.34.3.jar;C:\Users\allan\.m2\repository\org\junit\platform\junit-platform-engine\1.14.2\junit-platform-engine-1.14.2.jar;C:\Users\allan\.m2\repository\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar;C:\Users\allan\.m2\repository\org\junit\platform\junit-platform-commons\1.14.2\junit-platform-commons-1.14.2.jar;C:\Users\allan\.m2\repository\org\junit\platform\junit-platform-suite\1.14.2\junit-platform-suite-1.14.2.jar;C:\Users\allan\.m2\repository\org\junit\platform\junit-platform-suite-api\1.14.2\junit-platform-suite-api-1.14.2.jar;C:\Users\allan\.m2\repository\org\junit\platform\junit-platform-suite-engine\1.14.2\junit-platform-suite-engine-1.14.2.jar;C:\Users\allan\.m2\repository\org\junit\platform\junit-platform-suite-commons\1.14.2\junit-platform-suite-commons-1.14.2.jar;C:\Users\allan\.m2\repository\org\junit\platform\junit-platform-launcher\1.14.2\junit-platform-launcher-1.14.2.jar;C:\Users\allan\.m2\repository\org\junit\jupiter\junit-jupiter\5.14.2\junit-jupiter-5.14.2.jar;C:\Users\allan\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.14.2\junit-jupiter-api-5.14.2.jar;C:\Users\allan\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.14.2\junit-jupiter-params-5.14.2.jar;C:\Users\allan\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.14.2\junit-jupiter-engine-5.14.2.jar;C:\Users\allan\.m2\repository\org\mockito\mockito-core\5.23.0\mockito-core-5.23.0.jar;C:\Users\allan\.m2\repository\net\bytebuddy\byte-buddy-agent\1.17.5\byte-buddy-agent-1.17.5.jar;C:\Users\allan\.m2\repository\org\objenesis\objenesis\3.3\objenesis-3.3.jar;C:\Users\allan\.m2\repository\net\bytebuddy\byte-buddy\1.17.5\byte-buddy-1.17.5.jar;C:\Users\allan\.m2\repository\org\assertj\assertj-core\3.26.0\assertj-core-3.26.0.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\allan"/>
+    <property name="user.language" value="fr"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2025-10-21"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk-25"/>
+    <property name="file.separator" value="\"/>
+    <property name="basedir" value="C:\Users\allan\Documents\Ynov\Test\Test-java\03_exercices\Mes exercice\exercice14"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="surefire.real.class.path" value="C:\Users\allan\AppData\Local\Temp\surefire9654156744504198973\surefirebooter-20260626161050241_3.jar"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="25.0.1+8-LTS-27"/>
+    <property name="user.name" value="allan"/>
+    <property name="stdout.encoding" value="Cp1252"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="localRepository" value="C:\Users\allan\.m2\repository"/>
+    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="C:\Users\allan\AppData\Local\Temp\"/>
+    <property name="java.version" value="25.0.1"/>
+    <property name="user.dir" value="C:\Users\allan\Documents\Ynov\Test\Test-java\03_exercices\Mes exercice\exercice14"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="native.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk-25\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\Common Files\Oracle\Java\javapath;c:\Users\allan\AppData\Local\Programs\cursor\resources\app\bin;C:\Program Files\Google\Chrome\Application;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\ProgramData\ComposerSetup\bin;C:\ProgramData\chocolatey\bin;C:\Program Files\nodejs\;C:\Users\allan\scoop\shims;C:\Users\allan\AppData\Local\Microsoft\WindowsApps;C:\Users\allan\AppData\Local\GitHubDesktop\bin;C:\php;C:\Users\allan\AppData\Roaming\Composer\vendor\bin;C:\Users\allan\AppData\Local\JetBrains\Toolbox\scripts;C:\Users\allan\AppData\Roaming\npm;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files (x86)\Microsoft SQL Server\160\Tools\Binn\;C:\Program Files\Microsoft SQL Server\160\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Program Files\Microsoft SQL Server\160\DTS\Binn\;C:\Program Files\cursor\resources\app\bin;C:\Program Files\Docker\Docker\resources\bin;C:\Program Files\Git\cmd;C:\Users\allan\.local\bin;C:\Users\allan\scoop\shims;C:\Users\allan\AppData\Local\Microsoft\WindowsApps;C:\Users\allan\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\allan\AppData\Local\GitHubDesktop\bin;C:\php;C:\Users\allan\AppData\Roaming\Composer\vendor\bin;C:\Users\allan\AppData\Local\JetBrains\Toolbox\scripts;C:\Users\allan\AppData\Roaming\npm;C:\Users\allan\AppData\Local\Programs\cursor\resources\app\bin;C:\Users\allan\AppData\Local\Microsoft\WindowsApps;C:\Users\allan\Documents\Ynov\apache-maven-3.9.11\bin;C:\Users\allan\minikube;."/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="stderr.encoding" value="Cp1252"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.version" value="25.0.1+8-LTS-27"/>
+    <property name="stdin.encoding" value="Cp1252"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="69.0"/>
+  </properties>
+  <testcase name="Réservation d&apos;un ouvrage indisponible" classname="RunCucumberTest" time="0.923">
+    <system-out><![CDATA[
+&amp#27;[1mScenario:&amp#27;[22m Réservation d'un ouvrage indisponible   &amp#27;[90m# classpath:features/reservation.feature:3&amp#27;[39m
+  &amp#27;[32m✔&amp#27;[39m &amp#27;[32m&amp#27;[1mGiven &amp#27;[22mun adhérent &amp#27;[1m"Alice"&amp#27;[22m non suspendu&amp#27;[39m        &amp#27;[90m# com.example.ReservationSteps.unAdherentNonSuspendu(java.lang.String)&amp#27;[39m
+  &amp#27;[32m✔&amp#27;[39m &amp#27;[32m&amp#27;[1mAnd &amp#27;[22mun ouvrage &amp#27;[1m"Le Petit Prince"&amp#27;[22m indisponible&amp#27;[39m &amp#27;[90m# com.example.ReservationSteps.unOuvrageIndisponible(java.lang.String)&amp#27;[39m
+  &amp#27;[32m✔&amp#27;[39m &amp#27;[32m&amp#27;[1mWhen &amp#27;[22ml'adhérent réserve l'ouvrage&amp#27;[39m             &amp#27;[90m# com.example.ReservationSteps.adherentReserveLOuvrage()&amp#27;[39m
+  &amp#27;[32m✔&amp#27;[39m &amp#27;[32m&amp#27;[1mThen &amp#27;[22mla réservation est créée avec succès&amp#27;[39m     &amp#27;[90m# com.example.ReservationSteps.laReservationEstCreeeAvecSucces()&amp#27;[39m
+]]></system-out>
+    <system-err><![CDATA[juin 26, 2026 4:10:51 PM org.junit.platform.launcher.core.DiscoveryIssueNotifier logIssues
+WARNING: TestEngine with ID 'junit-platform-suite' encountered a non-critical issue during test discovery:
+
+(1) [WARNING] [cucumber] The classpath resource selector 'features' should not be used to select features in a package. Use the package selector with 'features' instead (via @Suite com.example.RunCucumberTest).
+]]></system-err>
+  </testcase>
+  <testcase name="Refus d&apos;une réservation pour un adhérent suspendu" classname="RunCucumberTest" time="0.009">
+    <system-out><![CDATA[
+&amp#27;[1mScenario:&amp#27;[22m Refus d'une réservation pour un adhérent suspendu &amp#27;[90m# classpath:features/reservation.feature:9&amp#27;[39m
+  &amp#27;[32m✔&amp#27;[39m &amp#27;[32m&amp#27;[1mGiven &amp#27;[22mun adhérent &amp#27;[1m"Charlie"&amp#27;[22m suspendu&amp#27;[39m                    &amp#27;[90m# com.example.ReservationSteps.unAdherentSuspendu(java.lang.String)&amp#27;[39m
+  &amp#27;[32m✔&amp#27;[39m &amp#27;[32m&amp#27;[1mAnd &amp#27;[22mun ouvrage &amp#27;[1m"1984"&amp#27;[22m indisponible&amp#27;[39m                      &amp#27;[90m# com.example.ReservationSteps.unOuvrageIndisponible(java.lang.String)&amp#27;[39m
+  &amp#27;[32m✔&amp#27;[39m &amp#27;[32m&amp#27;[1mWhen &amp#27;[22ml'adhérent réserve l'ouvrage&amp#27;[39m                       &amp#27;[90m# com.example.ReservationSteps.adherentReserveLOuvrage()&amp#27;[39m
+  &amp#27;[32m✔&amp#27;[39m &amp#27;[32m&amp#27;[1mThen &amp#27;[22mla réservation est refusée pour suspension&amp#27;[39m         &amp#27;[90m# com.example.ReservationSteps.laReservationEstRefuseePourSuspension()&amp#27;[39m
+]]></system-out>
+  </testcase>
+  <testcase name="Plusieurs réservations sur le même ouvrage" classname="RunCucumberTest" time="0.009">
+    <system-out><![CDATA[
+&amp#27;[1mScenario:&amp#27;[22m Plusieurs réservations sur le même ouvrage &amp#27;[90m# classpath:features/reservation.feature:15&amp#27;[39m
+  &amp#27;[32m✔&amp#27;[39m &amp#27;[32m&amp#27;[1mGiven &amp#27;[22mun ouvrage &amp#27;[1m"Les Misérables"&amp#27;[22m indisponible&amp#27;[39m   &amp#27;[90m# com.example.ReservationSteps.unOuvrageIndisponible(java.lang.String)&amp#27;[39m
+  &amp#27;[32m✔&amp#27;[39m &amp#27;[32m&amp#27;[1mWhen &amp#27;[22m&amp#27;[1m"Alice"&amp#27;[22m réserve cet ouvrage&amp#27;[39m                 &amp#27;[90m# com.example.ReservationSteps.personneReserveCetOuvrage(java.lang.String)&amp#27;[39m
+  &amp#27;[32m✔&amp#27;[39m &amp#27;[32m&amp#27;[1mAnd &amp#27;[22m&amp#27;[1m"Bob"&amp#27;[22m réserve cet ouvrage&amp#27;[39m                    &amp#27;[90m# com.example.ReservationSteps.personneReserveCetOuvrage(java.lang.String)&amp#27;[39m
+  &amp#27;[32m✔&amp#27;[39m &amp#27;[32m&amp#27;[1mThen &amp#27;[22mil y a &amp#27;[1m2&amp#27;[22m réservations en attente&amp#27;[39m            &amp#27;[90m# com.example.ReservationSteps.ilYAReservationsEnAttente(int)&amp#27;[39m
+]]></system-out>
+  </testcase>
+  <testcase name="Restitution d&apos;un ouvrage réservé" classname="RunCucumberTest" time="0.007">
+    <system-out><![CDATA[
+&amp#27;[1mScenario:&amp#27;[22m Restitution d'un ouvrage réservé            &amp#27;[90m# classpath:features/reservation.feature:21&amp#27;[39m
+  &amp#27;[32m✔&amp#27;[39m &amp#27;[32m&amp#27;[1mGiven &amp#27;[22mun ouvrage &amp#27;[1m"Dune"&amp#27;[22m indisponible&amp#27;[39m              &amp#27;[90m# com.example.ReservationSteps.unOuvrageIndisponible(java.lang.String)&amp#27;[39m
+  &amp#27;[32m✔&amp#27;[39m &amp#27;[32m&amp#27;[1mAnd &amp#27;[22ml'adhérent &amp#27;[1m"Alice"&amp#27;[22m a déjà réservé cet ouvrage&amp#27;[39m &amp#27;[90m# com.example.ReservationSteps.adherentADejaReserveCetOuvrage(java.lang.String)&amp#27;[39m
+  &amp#27;[32m✔&amp#27;[39m &amp#27;[32m&amp#27;[1mWhen &amp#27;[22ml'ouvrage est rendu&amp#27;[39m                          &amp#27;[90m# com.example.ReservationSteps.lOuvrageEstRendu()&amp#27;[39m
+  &amp#27;[32m✔&amp#27;[39m &amp#27;[32m&amp#27;[1mThen &amp#27;[22mla réservation de &amp#27;[1m"Alice"&amp#27;[22m est retournée&amp#27;[39m      &amp#27;[90m# com.example.ReservationSteps.laReservationDeEstRetournee(java.lang.String)&amp#27;[39m
+]]></system-out>
+  </testcase>
+  <testcase name="Un adhérent ne peut pas réserver un ouvrage disponible" classname="RunCucumberTest" time="0.005">
+    <system-out><![CDATA[
+&amp#27;[1mScenario:&amp#27;[22m Un adhérent ne peut pas réserver un ouvrage disponible &amp#27;[90m# classpath:features/reservation.feature:27&amp#27;[39m
+  &amp#27;[32m✔&amp#27;[39m &amp#27;[32m&amp#27;[1mGiven &amp#27;[22mun adhérent &amp#27;[1m"Bob"&amp#27;[22m non suspendu&amp#27;[39m                         &amp#27;[90m# com.example.ReservationSteps.unAdherentNonSuspendu(java.lang.String)&amp#27;[39m
+  &amp#27;[32m✔&amp#27;[39m &amp#27;[32m&amp#27;[1mAnd &amp#27;[22mun ouvrage &amp#27;[1m"Harry Potter"&amp#27;[22m disponible&amp#27;[39m                     &amp#27;[90m# com.example.ReservationSteps.unOuvrageDisponible(java.lang.String)&amp#27;[39m
+  &amp#27;[32m✔&amp#27;[39m &amp#27;[32m&amp#27;[1mWhen &amp#27;[22ml'adhérent réserve l'ouvrage&amp#27;[39m                            &amp#27;[90m# com.example.ReservationSteps.adherentReserveLOuvrage()&amp#27;[39m
+  &amp#27;[32m✔&amp#27;[39m &amp#27;[32m&amp#27;[1mThen &amp#27;[22mla réservation est refusée car l'ouvrage est disponible&amp#27;[39m &amp#27;[90m# com.example.ReservationSteps.laReservationEstRefuseePourOuvrageDisponible()&amp#27;[39m
+]]></system-out>
+  </testcase>
+</testsuite>
